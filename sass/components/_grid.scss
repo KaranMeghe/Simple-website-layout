@@ -20,5 +20,6 @@
 @media (max-width:600px){
         .grid{
             grid-template-columns: repeat(1, minmax(35rem, 25rem));
+            justify-content: center;
         } 
 }
