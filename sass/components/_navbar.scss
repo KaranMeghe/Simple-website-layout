@@ -1,0 +1,26 @@
+.navbar{
+    background: linear-gradient(to right bottom, var(--color-green-light), var(--color-green-dark) );
+    
+    &__list{
+        display: flex;
+        list-style: none;
+    }
+
+    &__item{
+        color: #fff;
+        padding: 2rem;
+
+        &--side{
+            margin-left: auto;
+        }
+    }
+
+}
+
+@media (max-width:600px){
+    
+    .navbar__item--side{
+          font-size: 5rem;
+       }
+   
+}

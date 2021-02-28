@@ -1,0 +1,126 @@
+:root {
+  --color-pink:  #eb2f64;
+  --color-pink-light: #FF3366;
+  --color-pink-dark:  #BA265D;
+  --color-green:#55c57a;
+  --color-green-light:#7ed56f;
+  --color-green-dark:#28b485;
+  --color-Grey-light-1: #faf9f9;
+  --color-Grey-light-2: #f4f2f2;
+  --color-Grey-light-3: #f0eeee;
+  --color-Grey-light-4: #ccc;
+  --color-blue-dark-1: #0984e3;
+  --color-grey-dark-2:#6c5ce7;
+  --color-grey-dark-3: #999;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Nunito;
+  font-size: 2rem;
+}
+
+.grid {
+  background: var(--color-blue-dark-1);
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+  -ms-grid-columns: (minmax(35rem, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(35rem, 1fr));
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.grid__box > img {
+  width: 100%;
+}
+
+.grid__box {
+  background: #444;
+  padding: 13rem;
+  margin: 2rem;
+  overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    -ms-grid-columns: (minmax(35rem, 25rem))[1];
+        grid-template-columns: repeat(1, minmax(35rem, 25rem));
+  }
+}
+
+.navbar {
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--color-green-light)), to(var(--color-green-dark)));
+  background: linear-gradient(to right bottom, var(--color-green-light), var(--color-green-dark));
+}
+
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.navbar__item {
+  color: #fff;
+  padding: 2rem;
+}
+
+.navbar__item--side {
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .navbar__item--side {
+    font-size: 5rem;
+  }
+}
+
+.footer {
+  background: var(--color-green-dark);
+}
+
+.footer__text {
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.section-header {
+  height: 50vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(var(--color-pink-light)), to(var(--color-pink-dark)));
+  background: linear-gradient(to right bottom, var(--color-pink-light), var(--color-pink-dark));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
